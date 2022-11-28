@@ -3,19 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18651337C91E321D3551E071 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE51F3E3FAA86E885AE7B1 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework */; };
 		AF46A6642934667200695043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6632934667200695043 /* AppDelegate.swift */; };
 		AF46A6662934667200695043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6652934667200695043 /* SceneDelegate.swift */; };
 		AF46A6682934667200695043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6672934667200695043 /* ViewController.swift */; };
 		AF46A66B2934667200695043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6692934667200695043 /* Main.storyboard */; };
 		AF46A66D2934667400695043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF46A66C2934667400695043 /* Assets.xcassets */; };
 		AF46A6702934667400695043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF46A66E2934667400695043 /* LaunchScreen.storyboard */; };
+		AF46A67A2934674A00695043 /* lsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6782934674A00695043 /* lsBold.ttf */; };
+		AF46A67B2934674A00695043 /* lsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6792934674A00695043 /* lsRegular.ttf */; };
+		AF46A67E293468B800695043 /* flagImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF46A67D293468B800695043 /* flagImage.plist */; };
+		AF46A6A02934695100695043 /* WAL.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6802934695000695043 /* WAL.png */; };
+		AF46A6A12934695100695043 /* ECU.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6812934695000695043 /* ECU.png */; };
+		AF46A6A22934695100695043 /* FRA.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6822934695000695043 /* FRA.png */; };
+		AF46A6A32934695100695043 /* NED.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6832934695000695043 /* NED.png */; };
+		AF46A6A42934695100695043 /* POL.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6842934695000695043 /* POL.png */; };
+		AF46A6A52934695100695043 /* SRB.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6852934695000695043 /* SRB.png */; };
+		AF46A6A62934695100695043 /* MAR.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6862934695000695043 /* MAR.png */; };
+		AF46A6A72934695100695043 /* URU.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6872934695000695043 /* URU.png */; };
+		AF46A6A82934695100695043 /* KSA.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6882934695000695043 /* KSA.png */; };
+		AF46A6A92934695100695043 /* CMR.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6892934695000695043 /* CMR.png */; };
+		AF46A6AA2934695100695043 /* BEL.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A68A2934695000695043 /* BEL.png */; };
+		AF46A6AB2934695100695043 /* TUN.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A68B2934695000695043 /* TUN.png */; };
+		AF46A6AC2934695100695043 /* SUI.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A68C2934695000695043 /* SUI.png */; };
+		AF46A6AD2934695100695043 /* CRO.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A68D2934695000695043 /* CRO.png */; };
+		AF46A6AE2934695100695043 /* ENG.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A68E2934695000695043 /* ENG.png */; };
+		AF46A6AF2934695100695043 /* AUS.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A68F2934695000695043 /* AUS.png */; };
+		AF46A6B02934695100695043 /* IRN.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6902934695000695043 /* IRN.png */; };
+		AF46A6B12934695100695043 /* KOR.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6912934695000695043 /* KOR.png */; };
+		AF46A6B22934695100695043 /* GHA.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6922934695000695043 /* GHA.png */; };
+		AF46A6B32934695100695043 /* DEN.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6932934695000695043 /* DEN.png */; };
+		AF46A6B42934695100695043 /* GER.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6942934695000695043 /* GER.png */; };
+		AF46A6B52934695100695043 /* BRA.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6952934695000695043 /* BRA.png */; };
+		AF46A6B62934695100695043 /* POR.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6962934695100695043 /* POR.png */; };
+		AF46A6B72934695100695043 /* ARG.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6972934695100695043 /* ARG.png */; };
+		AF46A6B82934695100695043 /* CAN.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6982934695100695043 /* CAN.png */; };
+		AF46A6B92934695100695043 /* MEX.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6992934695100695043 /* MEX.png */; };
+		AF46A6BA2934695100695043 /* CRC.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69A2934695100695043 /* CRC.png */; };
+		AF46A6BB2934695100695043 /* SEN.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69B2934695100695043 /* SEN.png */; };
+		AF46A6BC2934695100695043 /* QAT.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69C2934695100695043 /* QAT.png */; };
+		AF46A6BD2934695100695043 /* ESP.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69D2934695100695043 /* ESP.png */; };
+		AF46A6BE2934695100695043 /* JPN.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69E2934695100695043 /* JPN.png */; };
+		AF46A6BF2934695100695043 /* USA.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69F2934695100695043 /* USA.png */; };
+		AF46A6C329346D2B00695043 /* fifa2022vdo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6C129346D2B00695043 /* fifa2022vdo.mp4 */; };
+		AF46A6C429346D2B00695043 /* fifa2022sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6C229346D2B00695043 /* fifa2022sound.mp4 */; };
+		AF46A6C629346D5200695043 /* fifa2022.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6C529346D5200695043 /* fifa2022.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CBB28A85C28BA8D397F009 /* Pods-Fifa_WorldCup_2022_Final_Exam_049.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fifa_WorldCup_2022_Final_Exam_049.debug.xcconfig"; path = "Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049.debug.xcconfig"; sourceTree = "<group>"; };
 		AF46A6602934667200695043 /* Fifa_WorldCup_2022_Final_Exam_049.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fifa_WorldCup_2022_Final_Exam_049.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF46A6632934667200695043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF46A6652934667200695043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +64,46 @@
 		AF46A66C2934667400695043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF46A66F2934667400695043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF46A6712934667400695043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF46A6782934674A00695043 /* lsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lsBold.ttf; sourceTree = "<group>"; };
+		AF46A6792934674A00695043 /* lsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lsRegular.ttf; sourceTree = "<group>"; };
+		AF46A67D293468B800695043 /* flagImage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flagImage.plist; sourceTree = "<group>"; };
+		AF46A6802934695000695043 /* WAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WAL.png; sourceTree = "<group>"; };
+		AF46A6812934695000695043 /* ECU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ECU.png; sourceTree = "<group>"; };
+		AF46A6822934695000695043 /* FRA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRA.png; sourceTree = "<group>"; };
+		AF46A6832934695000695043 /* NED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NED.png; sourceTree = "<group>"; };
+		AF46A6842934695000695043 /* POL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = POL.png; sourceTree = "<group>"; };
+		AF46A6852934695000695043 /* SRB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SRB.png; sourceTree = "<group>"; };
+		AF46A6862934695000695043 /* MAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MAR.png; sourceTree = "<group>"; };
+		AF46A6872934695000695043 /* URU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = URU.png; sourceTree = "<group>"; };
+		AF46A6882934695000695043 /* KSA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KSA.png; sourceTree = "<group>"; };
+		AF46A6892934695000695043 /* CMR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMR.png; sourceTree = "<group>"; };
+		AF46A68A2934695000695043 /* BEL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEL.png; sourceTree = "<group>"; };
+		AF46A68B2934695000695043 /* TUN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TUN.png; sourceTree = "<group>"; };
+		AF46A68C2934695000695043 /* SUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SUI.png; sourceTree = "<group>"; };
+		AF46A68D2934695000695043 /* CRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CRO.png; sourceTree = "<group>"; };
+		AF46A68E2934695000695043 /* ENG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ENG.png; sourceTree = "<group>"; };
+		AF46A68F2934695000695043 /* AUS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUS.png; sourceTree = "<group>"; };
+		AF46A6902934695000695043 /* IRN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IRN.png; sourceTree = "<group>"; };
+		AF46A6912934695000695043 /* KOR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KOR.png; sourceTree = "<group>"; };
+		AF46A6922934695000695043 /* GHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GHA.png; sourceTree = "<group>"; };
+		AF46A6932934695000695043 /* DEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEN.png; sourceTree = "<group>"; };
+		AF46A6942934695000695043 /* GER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GER.png; sourceTree = "<group>"; };
+		AF46A6952934695000695043 /* BRA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BRA.png; sourceTree = "<group>"; };
+		AF46A6962934695100695043 /* POR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = POR.png; sourceTree = "<group>"; };
+		AF46A6972934695100695043 /* ARG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARG.png; sourceTree = "<group>"; };
+		AF46A6982934695100695043 /* CAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAN.png; sourceTree = "<group>"; };
+		AF46A6992934695100695043 /* MEX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEX.png; sourceTree = "<group>"; };
+		AF46A69A2934695100695043 /* CRC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CRC.png; sourceTree = "<group>"; };
+		AF46A69B2934695100695043 /* SEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SEN.png; sourceTree = "<group>"; };
+		AF46A69C2934695100695043 /* QAT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QAT.png; sourceTree = "<group>"; };
+		AF46A69D2934695100695043 /* ESP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ESP.png; sourceTree = "<group>"; };
+		AF46A69E2934695100695043 /* JPN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JPN.png; sourceTree = "<group>"; };
+		AF46A69F2934695100695043 /* USA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA.png; sourceTree = "<group>"; };
+		AF46A6C129346D2B00695043 /* fifa2022vdo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022vdo.mp4; sourceTree = "<group>"; };
+		AF46A6C229346D2B00695043 /* fifa2022sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022sound.mp4; sourceTree = "<group>"; };
+		AF46A6C529346D5200695043 /* fifa2022.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022.sqlite; sourceTree = "<group>"; };
+		D3273150AB6FADC82C7E6D1E /* Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; path = "Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; sourceTree = "<group>"; };
+		FFEE51F3E3FAA86E885AE7B1 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fifa_WorldCup_2022_Final_Exam_049.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18651337C91E321D3551E071 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +123,8 @@
 			children = (
 				AF46A6622934667200695043 /* Fifa_WorldCup_2022_Final_Exam_049 */,
 				AF46A6612934667200695043 /* Products */,
+				DFD406D976BF141B825BDCB3 /* Pods */,
+				BDCABA2D7906250EAB5E8E65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +139,11 @@
 		AF46A6622934667200695043 /* Fifa_WorldCup_2022_Final_Exam_049 */ = {
 			isa = PBXGroup;
 			children = (
+				AF46A6C729346D5500695043 /* database */,
+				AF46A6C029346D0E00695043 /* media */,
+				AF46A67F2934693F00695043 /* flag */,
+				AF46A67C2934687D00695043 /* propertyList */,
+				AF46A6772934671800695043 /* fonts */,
 				AF46A6632934667200695043 /* AppDelegate.swift */,
 				AF46A6652934667200695043 /* SceneDelegate.swift */,
 				AF46A6672934667200695043 /* ViewController.swift */,
@@ -67,6 +155,96 @@
 			path = Fifa_WorldCup_2022_Final_Exam_049;
 			sourceTree = "<group>";
 		};
+		AF46A6772934671800695043 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF46A6782934674A00695043 /* lsBold.ttf */,
+				AF46A6792934674A00695043 /* lsRegular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		AF46A67C2934687D00695043 /* propertyList */ = {
+			isa = PBXGroup;
+			children = (
+				AF46A67D293468B800695043 /* flagImage.plist */,
+			);
+			path = propertyList;
+			sourceTree = "<group>";
+		};
+		AF46A67F2934693F00695043 /* flag */ = {
+			isa = PBXGroup;
+			children = (
+				AF46A6972934695100695043 /* ARG.png */,
+				AF46A68F2934695000695043 /* AUS.png */,
+				AF46A68A2934695000695043 /* BEL.png */,
+				AF46A6952934695000695043 /* BRA.png */,
+				AF46A6982934695100695043 /* CAN.png */,
+				AF46A6892934695000695043 /* CMR.png */,
+				AF46A69A2934695100695043 /* CRC.png */,
+				AF46A68D2934695000695043 /* CRO.png */,
+				AF46A6932934695000695043 /* DEN.png */,
+				AF46A6812934695000695043 /* ECU.png */,
+				AF46A68E2934695000695043 /* ENG.png */,
+				AF46A69D2934695100695043 /* ESP.png */,
+				AF46A6822934695000695043 /* FRA.png */,
+				AF46A6942934695000695043 /* GER.png */,
+				AF46A6922934695000695043 /* GHA.png */,
+				AF46A6902934695000695043 /* IRN.png */,
+				AF46A69E2934695100695043 /* JPN.png */,
+				AF46A6912934695000695043 /* KOR.png */,
+				AF46A6882934695000695043 /* KSA.png */,
+				AF46A6862934695000695043 /* MAR.png */,
+				AF46A6992934695100695043 /* MEX.png */,
+				AF46A6832934695000695043 /* NED.png */,
+				AF46A6842934695000695043 /* POL.png */,
+				AF46A6962934695100695043 /* POR.png */,
+				AF46A69C2934695100695043 /* QAT.png */,
+				AF46A69B2934695100695043 /* SEN.png */,
+				AF46A6852934695000695043 /* SRB.png */,
+				AF46A68C2934695000695043 /* SUI.png */,
+				AF46A68B2934695000695043 /* TUN.png */,
+				AF46A6872934695000695043 /* URU.png */,
+				AF46A69F2934695100695043 /* USA.png */,
+				AF46A6802934695000695043 /* WAL.png */,
+			);
+			name = flag;
+			sourceTree = "<group>";
+		};
+		AF46A6C029346D0E00695043 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				AF46A6C229346D2B00695043 /* fifa2022sound.mp4 */,
+				AF46A6C129346D2B00695043 /* fifa2022vdo.mp4 */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		AF46A6C729346D5500695043 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				AF46A6C529346D5200695043 /* fifa2022.sqlite */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
+		BDCABA2D7906250EAB5E8E65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE51F3E3FAA86E885AE7B1 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD406D976BF141B825BDCB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00CBB28A85C28BA8D397F009 /* Pods-Fifa_WorldCup_2022_Final_Exam_049.debug.xcconfig */,
+				D3273150AB6FADC82C7E6D1E /* Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF46A6742934667400695043 /* Build configuration list for PBXNativeTarget "Fifa_WorldCup_2022_Final_Exam_049" */;
 			buildPhases = (
+				39901ECD8F597DB317F14581 /* [CP] Check Pods Manifest.lock */,
 				AF46A65C2934667200695043 /* Sources */,
 				AF46A65D2934667200695043 /* Frameworks */,
 				AF46A65E2934667200695043 /* Resources */,
+				A525123D5643898CBCD90ACC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +283,7 @@
 				};
 			};
 			buildConfigurationList = AF46A65B2934667200695043 /* Build configuration list for PBXProject "Fifa_WorldCup_2022_Final_Exam_049" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,13 +305,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF46A6A82934695100695043 /* KSA.png in Resources */,
+				AF46A67E293468B800695043 /* flagImage.plist in Resources */,
+				AF46A6A02934695100695043 /* WAL.png in Resources */,
+				AF46A6BC2934695100695043 /* QAT.png in Resources */,
+				AF46A6AB2934695100695043 /* TUN.png in Resources */,
+				AF46A6BF2934695100695043 /* USA.png in Resources */,
+				AF46A6B92934695100695043 /* MEX.png in Resources */,
+				AF46A6BD2934695100695043 /* ESP.png in Resources */,
+				AF46A6C629346D5200695043 /* fifa2022.sqlite in Resources */,
+				AF46A67B2934674A00695043 /* lsRegular.ttf in Resources */,
+				AF46A6AF2934695100695043 /* AUS.png in Resources */,
+				AF46A6B72934695100695043 /* ARG.png in Resources */,
+				AF46A6B12934695100695043 /* KOR.png in Resources */,
+				AF46A6A32934695100695043 /* NED.png in Resources */,
+				AF46A6C429346D2B00695043 /* fifa2022sound.mp4 in Resources */,
+				AF46A6B02934695100695043 /* IRN.png in Resources */,
+				AF46A6C329346D2B00695043 /* fifa2022vdo.mp4 in Resources */,
+				AF46A6AE2934695100695043 /* ENG.png in Resources */,
+				AF46A6A22934695100695043 /* FRA.png in Resources */,
+				AF46A6B52934695100695043 /* BRA.png in Resources */,
+				AF46A6B82934695100695043 /* CAN.png in Resources */,
+				AF46A6B62934695100695043 /* POR.png in Resources */,
+				AF46A6A62934695100695043 /* MAR.png in Resources */,
+				AF46A6A72934695100695043 /* URU.png in Resources */,
+				AF46A6BE2934695100695043 /* JPN.png in Resources */,
+				AF46A6A42934695100695043 /* POL.png in Resources */,
+				AF46A6AD2934695100695043 /* CRO.png in Resources */,
+				AF46A6B42934695100695043 /* GER.png in Resources */,
+				AF46A6AC2934695100695043 /* SUI.png in Resources */,
 				AF46A6702934667400695043 /* LaunchScreen.storyboard in Resources */,
 				AF46A66D2934667400695043 /* Assets.xcassets in Resources */,
+				AF46A6BA2934695100695043 /* CRC.png in Resources */,
+				AF46A6B22934695100695043 /* GHA.png in Resources */,
+				AF46A67A2934674A00695043 /* lsBold.ttf in Resources */,
+				AF46A6A92934695100695043 /* CMR.png in Resources */,
+				AF46A6A52934695100695043 /* SRB.png in Resources */,
 				AF46A66B2934667200695043 /* Main.storyboard in Resources */,
+				AF46A6BB2934695100695043 /* SEN.png in Resources */,
+				AF46A6B32934695100695043 /* DEN.png in Resources */,
+				AF46A6A12934695100695043 /* ECU.png in Resources */,
+				AF46A6AA2934695100695043 /* BEL.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39901ECD8F597DB317F14581 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fifa_WorldCup_2022_Final_Exam_049-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A525123D5643898CBCD90ACC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF46A65C2934667200695043 /* Sources */ = {
@@ -282,6 +542,7 @@
 		};
 		AF46A6752934667400695043 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CBB28A85C28BA8D397F009 /* Pods-Fifa_WorldCup_2022_Final_Exam_049.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +571,7 @@
 		};
 		AF46A6762934667400695043 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3273150AB6FADC82C7E6D1E /* Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
