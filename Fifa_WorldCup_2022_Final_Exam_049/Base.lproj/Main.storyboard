@@ -102,7 +102,7 @@
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="4" trailing="0.0"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="btnGroupA:" destination="uoN-xk-evC" eventType="touchUpInside" id="huI-IB-XG5"/>
+                                            <action selector="btnGroupA:" destination="uoN-xk-evC" eventType="touchUpInside" id="6QN-Wu-5Bj"/>
                                             <action selector="btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPS-R7-Afh"/>
                                         </connections>
                                     </button>
@@ -225,7 +225,6 @@
         <!--Team List Table View Controller-->
         <scene sceneID="Wx5-EJ-dCL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zal-pL-jk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="TeamListTableViewController_ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kao-OX-qN7" customClass="TeamListTableViewController" customModule="Fifa_WorldCup_2022_Final_Exam_049" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="GNb-JF-Noz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -333,6 +332,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zal-pL-jk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1862" y="-2"/>
         </scene>

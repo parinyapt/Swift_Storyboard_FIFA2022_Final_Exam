@@ -61,7 +61,6 @@
 		AF46A6D529347D3200695043 /* logogif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6D229347D3200695043 /* logogif1.gif */; };
 		AF46A6D729348B6A00695043 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6D629348B6A00695043 /* button1.png */; };
 		AF46A6D929348DCF00695043 /* logoh-white.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6D829348DCF00695043 /* logoh-white.png */; };
-		AF46A6DD2934A32700695043 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6DC2934A32700695043 /* GroupListViewController.swift */; };
 		AF46A6DF2934B21300695043 /* TeamListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6DE2934B21300695043 /* TeamListTableViewController.swift */; };
 		AF46A6E32934BEDF00695043 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6E22934BEDF00695043 /* TeamTableViewCell.swift */; };
 		AF46A6E52934D9C000695043 /* teamcard.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6E42934D9C000695043 /* teamcard.png */; };
@@ -75,6 +74,7 @@
 		AF46A6F52934FC8D00695043 /* matchscore.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6F42934FC8D00695043 /* matchscore.png */; };
 		AF46A6F7293500C200695043 /* winnericon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6F6293500C200695043 /* winnericon.png */; };
 		AF46A6F9293505F800695043 /* Utils.Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6F8293505F800695043 /* Utils.Formatter.swift */; };
+		AFD42EF029351AE70074EA80 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,7 +134,6 @@
 		AF46A6D229347D3200695043 /* logogif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logogif1.gif; sourceTree = "<group>"; };
 		AF46A6D629348B6A00695043 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
 		AF46A6D829348DCF00695043 /* logoh-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoh-white.png"; sourceTree = "<group>"; };
-		AF46A6DC2934A32700695043 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		AF46A6DE2934B21300695043 /* TeamListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListTableViewController.swift; sourceTree = "<group>"; };
 		AF46A6E22934BEDF00695043 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		AF46A6E42934D9C000695043 /* teamcard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teamcard.png; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 		AF46A6F42934FC8D00695043 /* matchscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matchscore.png; sourceTree = "<group>"; };
 		AF46A6F6293500C200695043 /* winnericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winnericon.png; sourceTree = "<group>"; };
 		AF46A6F8293505F800695043 /* Utils.Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.Formatter.swift; sourceTree = "<group>"; };
+		AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		D3273150AB6FADC82C7E6D1E /* Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; path = "Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; sourceTree = "<group>"; };
 		FFEE51F3E3FAA86E885AE7B1 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fifa_WorldCup_2022_Final_Exam_049.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				AF46A6632934667200695043 /* AppDelegate.swift */,
 				AF46A6652934667200695043 /* SceneDelegate.swift */,
 				AF46A6672934667200695043 /* ViewController.swift */,
-				AF46A6DC2934A32700695043 /* GroupListViewController.swift */,
 				AF46A6DE2934B21300695043 /* TeamListTableViewController.swift */,
 				AF46A6E22934BEDF00695043 /* TeamTableViewCell.swift */,
 				AF46A6EA2934E73D00695043 /* TeamDetailViewController.swift */,
@@ -205,6 +204,7 @@
 				AF46A6C829346DAF00695043 /* Utils.Database.swift */,
 				AF46A6CA293472AB00695043 /* Utils.PropertyList.swift */,
 				AF46A6F8293505F800695043 /* Utils.Formatter.swift */,
+				AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */,
 			);
 			path = Fifa_WorldCup_2022_Final_Exam_049;
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF46A6DD2934A32700695043 /* GroupListViewController.swift in Sources */,
+				AFD42EF029351AE70074EA80 /* GroupListViewController.swift in Sources */,
 				AF46A6EB2934E73D00695043 /* TeamDetailViewController.swift in Sources */,
 				AF46A6682934667200695043 /* ViewController.swift in Sources */,
 				AF46A6F9293505F800695043 /* Utils.Formatter.swift in Sources */,
