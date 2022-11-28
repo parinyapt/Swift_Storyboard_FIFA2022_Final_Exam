@@ -12,9 +12,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
 
     }
 
-
+    @IBAction func btnStart(_ sender: Any) {
+        guard let ModalVC = storyboard?.instantiateViewController(withIdentifier: "GroupListViewController_ID") as? GroupListViewController else {return}
+        ModalVC.modalPresentationStyle = .fullScreen
+        
+        present(ModalVC, animated: true)
+    }
+    
 }
 
