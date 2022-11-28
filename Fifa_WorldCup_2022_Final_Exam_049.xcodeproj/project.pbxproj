@@ -51,7 +51,6 @@
 		AF46A6BF2934695100695043 /* USA.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A69F2934695100695043 /* USA.png */; };
 		AF46A6C329346D2B00695043 /* fifa2022vdo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6C129346D2B00695043 /* fifa2022vdo.mp4 */; };
 		AF46A6C429346D2B00695043 /* fifa2022sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6C229346D2B00695043 /* fifa2022sound.mp4 */; };
-		AF46A6C629346D5200695043 /* fifa2022.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6C529346D5200695043 /* fifa2022.sqlite */; };
 		AF46A6C929346DAF00695043 /* Utils.Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6C829346DAF00695043 /* Utils.Database.swift */; };
 		AF46A6CB293472AB00695043 /* Utils.PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6CA293472AB00695043 /* Utils.PropertyList.swift */; };
 		AF46A6CD2934752300695043 /* Missing_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6CC2934752300695043 /* Missing_flag.png */; };
@@ -74,6 +73,9 @@
 		AF46A6F52934FC8D00695043 /* matchscore.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6F42934FC8D00695043 /* matchscore.png */; };
 		AF46A6F7293500C200695043 /* winnericon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF46A6F6293500C200695043 /* winnericon.png */; };
 		AF46A6F9293505F800695043 /* Utils.Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46A6F8293505F800695043 /* Utils.Formatter.swift */; };
+		AF9C2D5D2935266C00E40C6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2D5C2935266C00E40C6B /* LoginViewController.swift */; };
+		AF9C2D5F2935267A00E40C6B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2D5E2935267A00E40C6B /* RegisterViewController.swift */; };
+		AF9C2D6729352F8500E40C6B /* fifa2022new.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AF9C2D6629352F8500E40C6B /* fifa2022new.sqlite */; };
 		AFD42EF029351AE70074EA80 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,7 +126,6 @@
 		AF46A69F2934695100695043 /* USA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA.png; sourceTree = "<group>"; };
 		AF46A6C129346D2B00695043 /* fifa2022vdo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022vdo.mp4; sourceTree = "<group>"; };
 		AF46A6C229346D2B00695043 /* fifa2022sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022sound.mp4; sourceTree = "<group>"; };
-		AF46A6C529346D5200695043 /* fifa2022.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022.sqlite; sourceTree = "<group>"; };
 		AF46A6C829346DAF00695043 /* Utils.Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.Database.swift; sourceTree = "<group>"; };
 		AF46A6CA293472AB00695043 /* Utils.PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.PropertyList.swift; sourceTree = "<group>"; };
 		AF46A6CC2934752300695043 /* Missing_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Missing_flag.png; sourceTree = "<group>"; };
@@ -147,6 +148,9 @@
 		AF46A6F42934FC8D00695043 /* matchscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matchscore.png; sourceTree = "<group>"; };
 		AF46A6F6293500C200695043 /* winnericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winnericon.png; sourceTree = "<group>"; };
 		AF46A6F8293505F800695043 /* Utils.Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.Formatter.swift; sourceTree = "<group>"; };
+		AF9C2D5C2935266C00E40C6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF9C2D5E2935267A00E40C6B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AF9C2D6629352F8500E40C6B /* fifa2022new.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022new.sqlite; sourceTree = "<group>"; };
 		AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		D3273150AB6FADC82C7E6D1E /* Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; path = "Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; sourceTree = "<group>"; };
 		FFEE51F3E3FAA86E885AE7B1 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fifa_WorldCup_2022_Final_Exam_049.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +197,7 @@
 				AF46A6632934667200695043 /* AppDelegate.swift */,
 				AF46A6652934667200695043 /* SceneDelegate.swift */,
 				AF46A6672934667200695043 /* ViewController.swift */,
+				AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */,
 				AF46A6DE2934B21300695043 /* TeamListTableViewController.swift */,
 				AF46A6E22934BEDF00695043 /* TeamTableViewCell.swift */,
 				AF46A6EA2934E73D00695043 /* TeamDetailViewController.swift */,
@@ -204,7 +209,8 @@
 				AF46A6C829346DAF00695043 /* Utils.Database.swift */,
 				AF46A6CA293472AB00695043 /* Utils.PropertyList.swift */,
 				AF46A6F8293505F800695043 /* Utils.Formatter.swift */,
-				AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */,
+				AF9C2D5C2935266C00E40C6B /* LoginViewController.swift */,
+				AF9C2D5E2935267A00E40C6B /* RegisterViewController.swift */,
 			);
 			path = Fifa_WorldCup_2022_Final_Exam_049;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 		AF46A6C029346D0E00695043 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				AF46A6E62934DC0D00695043 /* teamcard2.png */,
 				AF46A6F6293500C200695043 /* winnericon.png */,
 				AF46A6F42934FC8D00695043 /* matchscore.png */,
 				AF46A6ED2934EE0900695043 /* backshadow1.png */,
@@ -291,8 +298,7 @@
 		AF46A6C729346D5500695043 /* database */ = {
 			isa = PBXGroup;
 			children = (
-				AF46A6E62934DC0D00695043 /* teamcard2.png */,
-				AF46A6C529346D5200695043 /* fifa2022.sqlite */,
+				AF9C2D6629352F8500E40C6B /* fifa2022new.sqlite */,
 			);
 			name = database;
 			sourceTree = "<group>";
@@ -387,7 +393,6 @@
 				AF46A6D729348B6A00695043 /* button1.png in Resources */,
 				AF46A6D329347D3200695043 /* logoh.png in Resources */,
 				AF46A6BD2934695100695043 /* ESP.png in Resources */,
-				AF46A6C629346D5200695043 /* fifa2022.sqlite in Resources */,
 				AF46A67B2934674A00695043 /* lsRegular.ttf in Resources */,
 				AF46A6D429347D3200695043 /* logow.png in Resources */,
 				AF46A6AF2934695100695043 /* AUS.png in Resources */,
@@ -423,6 +428,7 @@
 				AF46A6A52934695100695043 /* SRB.png in Resources */,
 				AF46A6F52934FC8D00695043 /* matchscore.png in Resources */,
 				AF46A6E92934DC6E00695043 /* teamcard3.png in Resources */,
+				AF9C2D6729352F8500E40C6B /* fifa2022new.sqlite in Resources */,
 				AF46A66B2934667200695043 /* Main.storyboard in Resources */,
 				AF46A6BB2934695100695043 /* SEN.png in Resources */,
 				AF46A6B32934695100695043 /* DEN.png in Resources */,
@@ -482,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9C2D5D2935266C00E40C6B /* LoginViewController.swift in Sources */,
 				AFD42EF029351AE70074EA80 /* GroupListViewController.swift in Sources */,
 				AF46A6EB2934E73D00695043 /* TeamDetailViewController.swift in Sources */,
 				AF46A6682934667200695043 /* ViewController.swift in Sources */,
@@ -491,6 +498,7 @@
 				AF46A6E32934BEDF00695043 /* TeamTableViewCell.swift in Sources */,
 				AF46A6CB293472AB00695043 /* Utils.PropertyList.swift in Sources */,
 				AF46A6C929346DAF00695043 /* Utils.Database.swift in Sources */,
+				AF9C2D5F2935267A00E40C6B /* RegisterViewController.swift in Sources */,
 				AF46A6F32934F6FB00695043 /* MatchDetailTableViewCell.swift in Sources */,
 				AF46A6DF2934B21300695043 /* TeamListTableViewController.swift in Sources */,
 			);

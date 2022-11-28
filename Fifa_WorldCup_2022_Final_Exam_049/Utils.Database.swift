@@ -16,7 +16,7 @@ class UtilsDatabase{
     var dataFetchOne:[String:Any] = [:]
     var dataFetchArray:[[String:Any]] = [[String:Any]]()
     
-    var databaseName:String = "fifa2022"
+    var databaseName:String = "fifa2022new"
     
     init() {
         dataFetchOne.removeAll()
@@ -119,6 +119,71 @@ class UtilsDatabase{
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    func InsertRegisterMember(name:String,username:String,password:String) -> Bool {
+        do {
+            try dbQueue.write { db in
+                let sqlCommand = "INSERT INTO member (name, username, password) VALUES (?,?,?)"
+                try db.execute(sql: sqlCommand, arguments: [name, username, password])
+            }
+            
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+    
+    func CheckIsMemberExist(username:String) -> Bool {
+        dataFetchArray.removeAll()
+        do {
+            try dbQueue.read { db in
+                let sqlCommand = "SELECT id FROM member WHERE username = ?"
+                let rows = try Row.fetchCursor(db, sql: sqlCommand,arguments: [username])
+                while let row = try rows.next() {
+                    let tempData:[String:String] = [
+                        "id": row["id"]
+                    ]
+                    dataFetchArray.append(tempData)
+                }
+                
+                print(dataFetchArray)
+            }
+            if dataFetchArray.count == 0 {
+                return false
+            }
+        } catch {
+            print(error.localizedDescription)
+            return true
+        }
+        return true
+    }
+    
+    func CheckLoginMember(username:String,password:String) -> Bool {
+        dataFetchArray.removeAll()
+        do {
+            try dbQueue.read { db in
+                let sqlCommand = "SELECT id,name FROM member WHERE username = ? AND password = ?"
+                let rows = try Row.fetchCursor(db, sql: sqlCommand,arguments: [username,password])
+                while let row = try rows.next() {
+                    let tempData:[String:String] = [
+                        "id": row["id"],
+                        "name": row["name"]
+                    ]
+                    dataFetchArray.append(tempData)
+                }
+                
+                print(dataFetchArray)
+            }
+            if dataFetchArray.count == 1 {
+                return true
+            }
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+        return false
     }
    
 }

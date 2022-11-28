@@ -23,5 +23,11 @@ class ViewController: UIViewController {
         present(ModalVC, animated: true)
     }
     
+    @IBAction func btnGotoLoginPage(_ sender: Any) {
+        guard let ModalVC = storyboard?.instantiateViewController(withIdentifier: "LoginViewController_ID") as? LoginViewController else {return}
+        ModalVC.modalPresentationStyle = .fullScreen
+        
+        present(ModalVC, animated: true)
+    }
 }
 

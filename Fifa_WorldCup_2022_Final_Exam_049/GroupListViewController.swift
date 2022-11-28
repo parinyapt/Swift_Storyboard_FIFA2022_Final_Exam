@@ -9,10 +9,43 @@ import UIKit
 
 class GroupListViewController: UIViewController {
 
+    @IBOutlet weak var loginuser_name: UILabel!
+    @IBOutlet weak var loginuser_btn: UIButton!
+    @IBOutlet weak var loginuser_logoutbtn: UIButton!
+    
+    @IBOutlet weak var nonloginuser_loginbtn: UIButton!
+    @IBAction func nonloginuser_loginbtn(_ sender: Any) {
+        guard let ModalVC = storyboard?.instantiateViewController(withIdentifier: "LoginViewController_ID") as? LoginViewController else {return}
+        ModalVC.modalPresentationStyle = .fullScreen
+        
+        present(ModalVC, animated: true)
+    }
+    
+    @IBAction func loginuser_logoutbtn(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "userid")
+        UserDefaults.standard.removeObject(forKey: "username")
+        loginuser_name.isHidden = true
+        loginuser_btn.isHidden = true
+        loginuser_logoutbtn.isHidden = true
+        nonloginuser_loginbtn.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if UserDefaults.standard.value(forKey: "userid") != nil {
+            loginuser_name.text = "Hello, \(UserDefaults.standard.value(forKey: "username") ?? "User")"
+            loginuser_name.isHidden = false
+            loginuser_btn.isHidden = false
+            loginuser_logoutbtn.isHidden = false
+            nonloginuser_loginbtn.isHidden = true
+        }else{
+            loginuser_name.isHidden = true
+            loginuser_btn.isHidden = true
+            loginuser_logoutbtn.isHidden = true
+            nonloginuser_loginbtn.isHidden = false
+        }
     }
     
     @IBAction func btnGroupA(_ sender: Any) {
