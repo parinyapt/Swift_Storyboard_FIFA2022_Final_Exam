@@ -76,6 +76,8 @@
 		AF9C2D5D2935266C00E40C6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2D5C2935266C00E40C6B /* LoginViewController.swift */; };
 		AF9C2D5F2935267A00E40C6B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2D5E2935267A00E40C6B /* RegisterViewController.swift */; };
 		AF9C2D6729352F8500E40C6B /* fifa2022new.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AF9C2D6629352F8500E40C6B /* fifa2022new.sqlite */; };
+		AF9C2D69293547B300E40C6B /* FavTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2D68293547B300E40C6B /* FavTeamTableViewController.swift */; };
+		AF9C2D6B293547C900E40C6B /* FavTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C2D6A293547C900E40C6B /* FavTeamTableViewCell.swift */; };
 		AFD42EF029351AE70074EA80 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +153,8 @@
 		AF9C2D5C2935266C00E40C6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF9C2D5E2935267A00E40C6B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AF9C2D6629352F8500E40C6B /* fifa2022new.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fifa2022new.sqlite; sourceTree = "<group>"; };
+		AF9C2D68293547B300E40C6B /* FavTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTeamTableViewController.swift; sourceTree = "<group>"; };
+		AF9C2D6A293547C900E40C6B /* FavTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTeamTableViewCell.swift; sourceTree = "<group>"; };
 		AFD42EEF29351AE70074EA80 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		D3273150AB6FADC82C7E6D1E /* Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; path = "Target Support Files/Pods-Fifa_WorldCup_2022_Final_Exam_049/Pods-Fifa_WorldCup_2022_Final_Exam_049.release.xcconfig"; sourceTree = "<group>"; };
 		FFEE51F3E3FAA86E885AE7B1 /* Pods_Fifa_WorldCup_2022_Final_Exam_049.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fifa_WorldCup_2022_Final_Exam_049.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +215,8 @@
 				AF46A6F8293505F800695043 /* Utils.Formatter.swift */,
 				AF9C2D5C2935266C00E40C6B /* LoginViewController.swift */,
 				AF9C2D5E2935267A00E40C6B /* RegisterViewController.swift */,
+				AF9C2D68293547B300E40C6B /* FavTeamTableViewController.swift */,
+				AF9C2D6A293547C900E40C6B /* FavTeamTableViewCell.swift */,
 			);
 			path = Fifa_WorldCup_2022_Final_Exam_049;
 			sourceTree = "<group>";
@@ -492,10 +498,12 @@
 				AFD42EF029351AE70074EA80 /* GroupListViewController.swift in Sources */,
 				AF46A6EB2934E73D00695043 /* TeamDetailViewController.swift in Sources */,
 				AF46A6682934667200695043 /* ViewController.swift in Sources */,
+				AF9C2D6B293547C900E40C6B /* FavTeamTableViewCell.swift in Sources */,
 				AF46A6F9293505F800695043 /* Utils.Formatter.swift in Sources */,
 				AF46A6642934667200695043 /* AppDelegate.swift in Sources */,
 				AF46A6662934667200695043 /* SceneDelegate.swift in Sources */,
 				AF46A6E32934BEDF00695043 /* TeamTableViewCell.swift in Sources */,
+				AF9C2D69293547B300E40C6B /* FavTeamTableViewController.swift in Sources */,
 				AF46A6CB293472AB00695043 /* Utils.PropertyList.swift in Sources */,
 				AF46A6C929346DAF00695043 /* Utils.Database.swift in Sources */,
 				AF9C2D5F2935267A00E40C6B /* RegisterViewController.swift in Sources */,

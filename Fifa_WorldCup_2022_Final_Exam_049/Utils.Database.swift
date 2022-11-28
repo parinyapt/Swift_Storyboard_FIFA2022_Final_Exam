@@ -16,11 +16,14 @@ class UtilsDatabase{
     var dataFetchOne:[String:Any] = [:]
     var dataFetchArray:[[String:Any]] = [[String:Any]]()
     
+    var favdataFetchArray:[[String:Any]] = [[String:Any]]()
+    
     var databaseName:String = "fifa2022new"
     
     init() {
         dataFetchOne.removeAll()
         dataFetchArray.removeAll()
+        favdataFetchArray.removeAll()
         
         do {
             let databaseURL = Bundle.main.path(forResource: databaseName, ofType: "sqlite") ?? nil
@@ -184,6 +187,110 @@ class UtilsDatabase{
             return false
         }
         return false
+    }
+    
+    func CheckIsFavorite(teamid:String,userid:String) -> Bool {
+        do {
+            try dbQueue.read { db in
+                let sqlCommand = "SELECT id FROM favorite_team WHERE team_id = ? AND member_id = ?"
+                let rows = try Row.fetchCursor(db, sql: sqlCommand,arguments: [teamid,userid])
+                while let row = try rows.next() {
+                    let tempData:[String:String] = [
+                        "id": row["id"]
+                    ]
+                    favdataFetchArray.append(tempData)
+                }
+                
+                print(favdataFetchArray)
+            }
+            if favdataFetchArray.count == 0 {
+                return false
+            }else{
+                return true
+            }
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+    
+    func AddFavorite(teamid:String,userid:String) -> Bool {
+        do {
+            try dbQueue.write { db in
+                let sqlCommand = "INSERT INTO favorite_team (team_id,member_id) VALUES (?,?)"
+                try db.execute(sql: sqlCommand, arguments: [teamid, userid])
+            }
+            
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+    
+    func UnFavorite(teamid:String,userid:String) -> Bool {
+        do {
+            try dbQueue.write { db in
+                let sqlCommand = "DELETE FROM favorite_team WHERE team_id = ? AND member_id = ?"
+                try db.execute(sql: sqlCommand, arguments: [teamid, userid])
+            }
+            
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+//    GetAllFavTeam
+    func GetAllFavTeam(userid:String) {
+        do {
+            try dbQueue.read { db in
+                let sqlCommand = "SELECT team.id AS id, team.uuid AS uuid, name, fifa_code, iso2,score_mp, score_w, score_l, score_pts, score_gf, score_ga, score_gd, score_d FROM favorite_team INNER JOIN team ON favorite_team.team_id = team.id INNER JOIN standing ON team.id = standing.team_id WHERE favorite_team.member_id = ?"
+                let rows = try Row.fetchCursor(db, sql: sqlCommand,arguments: [userid])
+                while let row = try rows.next() {
+                    let tempData:[String:String] = [
+                        "id": row["id"],
+                        "uuid": row["uuid"],
+                        "name": row["name"],
+                        "fifa_code": row["fifa_code"],
+                        "score_mp": row["score_mp"],
+                        "score_w": row["score_w"],
+                        "score_l": row["score_l"],
+                        "score_pts": row["score_pts"],
+                        "score_gf": row["score_gf"],
+                        "score_ga": row["score_ga"],
+                        "score_gd": row["score_gd"],
+                        "score_d": row["score_d"]
+                    ]
+                    dataFetchArray.append(tempData)
+                }
+                print(dataFetchArray)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func TestShowAllFavorite() {
+        favdataFetchArray.removeAll()
+        do {
+            try dbQueue.read { db in
+                let sqlCommand = "SELECT id,member_id,team_id FROM favorite_team"
+                let rows = try Row.fetchCursor(db, sql: sqlCommand)
+                while let row = try rows.next() {
+                    let tempData:[String:String] = [
+                        "id": row["id"],
+                        "member_id": row["member_id"],
+                        "team_id": row["team_id"],
+                    ]
+                    favdataFetchArray.append(tempData)
+                }
+                
+                print(favdataFetchArray)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
     }
    
 }

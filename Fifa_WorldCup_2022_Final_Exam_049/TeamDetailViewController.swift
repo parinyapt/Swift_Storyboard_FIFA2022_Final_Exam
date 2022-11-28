@@ -27,6 +27,38 @@ class TeamDetailViewController: UIViewController {
     
     @IBOutlet weak var MatchTableView: UITableView!
     
+    @IBOutlet weak var favbtn: UIButton!
+    
+    @IBAction func favbtn(_ sender: Any) {
+        if UserDefaults.standard.value(forKey: "userid") != nil {
+            let isfav = database.CheckIsFavorite(teamid:team_select,userid:UserDefaults.standard.value(forKey: "userid") as! String)
+            if isfav {
+                let success = database.UnFavorite(teamid: team_select, userid: UserDefaults.standard.value(forKey: "userid") as! String)
+                if success {
+                    print("UnFavorite complete")
+                    database.TestShowAllFavorite()
+//                    customAlert(title: "Success", message: "UnFavorite complete", btn: "OK", method: "gotofav")
+                }else{
+//                    customAlert(title: "Error", message: "UnFavorite Fail", btn: "OK", method: "")
+                    print("UnFavorite Fail")
+                    database.TestShowAllFavorite()
+                }
+            }else{
+                let success = database.AddFavorite(teamid: team_select, userid: UserDefaults.standard.value(forKey: "userid") as! String)
+                if success {
+                    print("AddFavorite complete")
+                    database.TestShowAllFavorite()
+//                    customAlert(title: "Success", message: "AddFavorite complete", btn: "OK", method: "gotofav")
+                }else{
+                    print("AddFavorite Fail")
+                    database.TestShowAllFavorite()
+//                    customAlert(title: "Error", message: "UnFavorite Fail", btn: "OK", method: "")
+                }
+            }
+            favbtn.isHidden = false
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         database.GetTeamDetailByTeamID(team_id: team_select)
@@ -37,6 +69,16 @@ class TeamDetailViewController: UIViewController {
         MatchTableView.dataSource = self
         MatchTableView.delegate = self
         MatchTableView.rowHeight = 210
+        
+        if UserDefaults.standard.value(forKey: "userid") != nil {
+            let isfav = database.CheckIsFavorite(teamid:team_select,userid:UserDefaults.standard.value(forKey: "userid") as! String)
+            if isfav {
+                favbtn.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            }else{
+                favbtn.setImage(UIImage(systemName: "star"), for: .normal)
+            }
+            favbtn.isHidden = false
+        }
     }
     
     func setup(){
@@ -56,7 +98,17 @@ class TeamDetailViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
-    
+//    func customAlert(title:String, message:String, btn:String, method:String) {
+//        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+//        alert.addAction(UIAlertAction(title: btn, style: .cancel, handler: {action in
+//            if method == "gotofav" {
+////                self.GotoLoginPage()
+//            }
+//            print("tap dismiss")
+//        }))
+//
+//        present(alert, animated: true)
+//    }
 
     /*
     // MARK: - Navigation

@@ -227,26 +227,119 @@
             </objects>
             <point key="canvasLocation" x="937" y="-761"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vNA-Q9-idn">
+        <!--My Favorite Team-->
+        <scene sceneID="4dV-LV-gVe">
             <objects>
-                <viewController id="eHi-PL-xdn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="amo-9M-Bnu">
+                <tableViewController storyboardIdentifier="FavTeamTableViewController_ID" title="My Favorite Team" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Qi-So-vEj" customClass="FavTeamTableViewController" customModule="Fifa_WorldCup_2022_Final_Exam_049" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vMJ-Bm-KSi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="XuR-VH-uws">
-                                <rect key="frame" x="-10" y="-77" width="412" height="1006"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ALa-N3-HOQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sic-kO-6JV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavTeamTableViewCell_ID" rowHeight="219" id="ddp-Y7-Qt6" customClass="FavTeamTableViewCell" customModule="Fifa_WorldCup_2022_Final_Exam_049" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="219"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ddp-Y7-Qt6" id="a9M-3P-2gI">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="219"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teamcard3.png" translatesAutoresizingMaskIntoConstraints="NO" id="XZF-Gs-Tcd">
+                                            <rect key="frame" x="11" y="4" width="371" height="204"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmx-J5-1JS">
+                                            <rect key="frame" x="152" y="40" width="174" height="46"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Bold" family="LINE Seed Sans TH App" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPw-Zz-fcG">
+                                            <rect key="frame" x="38" y="141" width="34" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="w" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7d-Ij-wkM">
+                                            <rect key="frame" x="72" y="141" width="42" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="l" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqR-fb-wb1">
+                                            <rect key="frame" x="116" y="141" width="39" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpY-j7-BRe">
+                                            <rect key="frame" x="155" y="141" width="42" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfm-Zu-jwX">
+                                            <rect key="frame" x="196" y="141" width="41" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ga" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nee-A5-nUJ">
+                                            <rect key="frame" x="237" y="141" width="40" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scw-44-OQF">
+                                            <rect key="frame" x="277" y="141" width="40" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="d" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIc-gI-O4c">
+                                            <rect key="frame" x="318" y="141" width="38" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LINESeedSansTHApp-Regular" family="LINE Seed Sans TH App" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xl8-bp-9L2">
+                                            <rect key="frame" x="38" y="35" width="92" height="56"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.80496811869999996" green="0.60981351139999995" blue="0.44760453700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="flagimage" destination="Xl8-bp-9L2" id="cOj-cf-Efl"/>
+                                    <outlet property="name" destination="mmx-J5-1JS" id="fyL-Um-6hK"/>
+                                    <outlet property="scoreD" destination="qIc-gI-O4c" id="LtD-aU-5Oh"/>
+                                    <outlet property="scoreGA" destination="nee-A5-nUJ" id="P9W-nb-zI8"/>
+                                    <outlet property="scoreGD" destination="Scw-44-OQF" id="jpY-ob-XhW"/>
+                                    <outlet property="scoreGF" destination="qfm-Zu-jwX" id="aYC-xd-zOx"/>
+                                    <outlet property="scoreMP" destination="oPw-Zz-fcG" id="eng-VQ-No9"/>
+                                    <outlet property="scorePTS" destination="cpY-j7-BRe" id="dcz-0w-o4m"/>
+                                    <outlet property="scoreW" destination="q7d-Ij-wkM" id="sik-2w-2K9"/>
+                                    <outlet property="scorel" destination="jqR-fb-wb1" id="JqW-KM-p0s"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6Qi-So-vEj" id="GOi-8G-ggm"/>
+                            <outlet property="delegate" destination="6Qi-So-vEj" id="CLY-KI-wBZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3T-fd-54O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="-761"/>
+            <point key="canvasLocation" x="1861.8320610687022" y="-761.26760563380287"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -465,8 +558,11 @@
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amz-WX-Imo">
                                         <rect key="frame" x="244" y="606" width="133" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.80496811869999996" green="0.60981351139999995" blue="0.44760453700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Logout"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Logout">
+                                            <color key="baseBackgroundColor" red="0.80496811869999996" green="0.60981351139999995" blue="0.44760453700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="loginuser_logoutbtn:" destination="uoN-xk-evC" eventType="touchUpInside" id="L8T-Xh-seY"/>
                                         </connections>
@@ -474,8 +570,14 @@
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC1-bM-us9">
                                         <rect key="frame" x="16" y="606" width="220" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.80496811869999996" green="0.60981351139999995" blue="0.44760453700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="My Favorite Team"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="My Favorite Team">
+                                            <color key="baseBackgroundColor" red="0.80496811869999996" green="0.60981351139999995" blue="0.44760453700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnmyfavteam:" destination="uoN-xk-evC" eventType="touchUpInside" id="LmH-vt-fKT"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-GB-q9D">
                                         <rect key="frame" x="67" y="561" width="259" height="37"/>
@@ -851,12 +953,24 @@
                                     <action selector="btnClosePage:" destination="4cx-k0-TUG" eventType="touchUpInside" id="3t0-4R-XMc"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1D-cn-nM0">
+                                <rect key="frame" x="9" y="65" width="52" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.80496811869999996" green="0.60981351139999995" blue="0.44760453700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="btnClosePage:" destination="4cx-k0-TUG" eventType="touchUpInside" id="SAw-ML-w4h"/>
+                                    <action selector="favbtn:" destination="4cx-k0-TUG" eventType="touchUpInside" id="aQO-7y-yxF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CbX-bZ-V4C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="MatchTableView" destination="qWT-5t-GPm" id="aFN-oF-v4C"/>
+                        <outlet property="favbtn" destination="o1D-cn-nM0" id="OR7-cR-fMN"/>
                         <outlet property="flagImage" destination="SEK-RZ-ni4" id="qex-J6-euW"/>
                         <outlet property="name" destination="3PR-bg-Jbh" id="S74-iC-Mfi"/>
                         <outlet property="scoreD" destination="99g-pe-vCq" id="o8O-Ve-SMt"/>
@@ -881,6 +995,7 @@
         <image name="logoh-white.png" width="698.4000244140625" height="908.8800048828125"/>
         <image name="matchscore.png" width="1267.199951171875" height="698.8800048828125"/>
         <image name="standingScore.png" width="970.32000732421875" height="228"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="teamcard3.png" width="1264.3199462890625" height="646.08001708984375"/>
         <image name="teamname.png" width="834.239990234375" height="229.67999267578125"/>
         <image name="winnericon.png" width="268.32000732421875" height="223"/>

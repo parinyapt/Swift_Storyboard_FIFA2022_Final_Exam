@@ -88,6 +88,13 @@ class GroupListViewController: UIViewController {
         present(ModalVC, animated: true)
     }
     
+    @IBAction func btnmyfavteam(_ sender: Any) {
+        guard let ModalVC = storyboard?.instantiateViewController(withIdentifier: "FavTeamTableViewController_ID") as? FavTeamTableViewController else {return}
+        ModalVC.modalPresentationStyle = .popover
+        
+        present(ModalVC, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

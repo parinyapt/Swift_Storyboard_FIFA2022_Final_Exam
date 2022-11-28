@@ -13,7 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-
+        UserDefaults.standard.removeObject(forKey: "userid")
+        UserDefaults.standard.removeObject(forKey: "username")
     }
 
     @IBAction func btnStart(_ sender: Any) {
